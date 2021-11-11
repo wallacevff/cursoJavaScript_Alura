@@ -32,12 +32,9 @@ function obtemPacienteDoFormulario(form) {
 botaoAdicionar.addEventListener("click", function () {
     event.preventDefault();
     var form = document.querySelector("#form-adiciona");
-
     var paciente = new Paciente(form);
-    console.log(paciente);
-
     var pacienteTr = new PacienteTR(paciente);
     pacienteTr.adicionaPaciente();
-    console.log(pacienteTr.pacienteTr);
+    form.reset();
 
 });
