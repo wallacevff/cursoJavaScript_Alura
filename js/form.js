@@ -1,5 +1,6 @@
-var botaoAdicionar = document.querySelector("#adicionar-paciente");
 
+var botaoAdicionar = document.querySelector("#adicionar-paciente");
+/*
 //Declaração da classe paciente e suas funções
 
 
@@ -25,16 +26,26 @@ function obtemPacienteDoFormulario(form) {
            form.altura.value,
            form.gordura.value
        );
-    */
+  
     return paciente;
 }
-
+*/
 botaoAdicionar.addEventListener("click", function () {
     event.preventDefault();
-    var form = document.querySelector("#form-adiciona");
+   /* var form = document.querySelector("#form-adiciona");
     var paciente = new Paciente(form);
+    if(isNaN(paciente.imc)){
+        var mensagemErro = document.querySelector("#mensagem-erro");
+        mensagemErro.textContent = paciente.imc;
+        return;
+    }
     var pacienteTr = new PacienteTR(paciente);
     pacienteTr.adicionaPaciente();
-    form.reset();
+    form.reset(); */
+    var form = new Form();
+    form.insere();
 
 });
+
+
+

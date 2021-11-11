@@ -14,14 +14,15 @@
 
 	<header>
 		<div class="container">
-			<h1 id="titulo" >Aparecida Nutrição</h1>
+			<h1 id="titulo">Aparecida Nutrição</h1>
 		</div>
 	</header>
 	<main>
 
-
+		
 		<!-- ... -->
 		<section class="container">
+			<ul id="mensagem-erro" class="paciente-invalido"></ul>
 			<h2 id="titulo-form">Adicionar novo paciente</h2>
 			<form id="form-adiciona">
 				<div class="grupo">
@@ -40,8 +41,8 @@
 				</div>
 				<div class="grupo">
 					<label for="gordura">% de Gordura:</label>
-					<input id="gordura" name="percgordura" type="text" placeholder="digite a porcentagem de gordura do seu paciente"
-						class="campo campo-medio">
+					<input id="gordura" name="percgordura" type="text"
+						placeholder="digite a porcentagem de gordura do seu paciente" class="campo campo-medio">
 				</div>
 
 				<button id="adicionar-paciente" class="botao bto-principal">Adicionar</button>
@@ -109,6 +110,8 @@
 	<script src="js/calculaImc.js"></script>
 	<script src="js/classes/paciente.js"></script>
 	<script src="js/classes/pacienteTR.js"></script>
+	<script src="js/classes/form.js"></script>
+	<script src="js/classes/mensagens.js"></script>
 	<script src="js/form.js"></script>
 </body>
 
