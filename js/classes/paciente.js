@@ -15,6 +15,7 @@ class Paciente {
         this.imc = this.valorImc(form.peso.value, form.altura.value);
         this.validarCampos();
     }
+   
 
     calculaImc(peso, altura) {
         var imc = peso / (altura * altura);
